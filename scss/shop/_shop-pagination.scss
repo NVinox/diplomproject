@@ -1,0 +1,66 @@
+// Shop pagination
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+}
+
+.page-numbers.current{
+    background-color: $black;
+    color: $white;
+}
+
+.page-numbers.next{
+    position: relative;
+    width: 20px;
+    border: none;
+    font-size: 0;
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('../../img/shop/next.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+}
+
+.page-numbers.prev {
+    position: relative;
+    width: 20px;
+    font-size: 0;
+    border: none;
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('../../img/shop/next.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        transform: rotate(180deg);
+    }
+}
+
+.page-numbers {
+    font-family: 'Raleway', sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    display: block;
+    width: 40px;
+    line-height: 40px;
+    background-color: transparent;
+    border: 1px solid $black;
+    text-align: center;
+}
+
+.page-numbers + .page-numbers{
+    margin-left: 15px;
+}

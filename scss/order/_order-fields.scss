@@ -1,0 +1,36 @@
+// Order fields START
+
+.order-fields {
+    max-width: 350px;
+    width: 100%;
+    .fields + .fields {
+        margin-top: 80px;
+    }
+}
+
+#phone-error,
+#country-error,
+#town-error,
+#street-error,
+#house-error,
+#apartment-error {
+    display: block;
+    color: red;
+    margin-bottom: 12px;
+}
+
+// Media
+@media (max-width: 540px){
+    .order-fields {
+        max-width: 100%;
+        .fields + .fields {
+            margin-top: 60px;
+        }
+    }
+}
+
+@media (max-width: 649px){
+    .order-fields {
+        margin-bottom: 80px;
+    }
+}

@@ -1,0 +1,156 @@
+@import "vars";
+
+html,
+body {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    height: 100%;
+    color: $black;
+    line-height: 1.4em;
+    letter-spacing: 0.02em;
+}
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+a {
+    display: inline-block;
+    color: inherit;
+    line-height: 1.4em;
+    transition: color .5s ease, background-color .5s ease, text-shadow .5s ease;
+}
+
+.page-title {
+    font-size: 55px;
+    line-height: 1.1em;
+    margin-bottom: 45px;
+}
+
+.page-title_item {
+    margin-bottom: 26px;
+}
+
+.blog-title {
+    font-size: 25px;
+    margin-bottom: 45px;
+}
+
+.page-section {
+    padding: 130px 0;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    padding: 22px 50px;
+    background-color: $cta;
+}
+
+.section-title {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 1.1em;
+    margin-bottom: 90px;
+}
+
+.heading-title__three {
+    font-size: 25px;
+    margin-bottom: 25px;
+    letter-spacing: 0.02em;
+}
+
+.input-default {
+    font-family: 'Raleway', sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    display: block;
+    padding: 0 0 15px;
+    max-width: 350px;
+    width: 100%;
+    border-bottom: 1px solid $black;
+    &:focus {
+        border-color: $cta;
+    }
+}
+
+.input-default + .input-default {
+    margin-top: 35px;
+}
+
+.input-default.error {
+    border-color: red;
+}
+
+.input-default.valid {
+    margin-bottom: 35px;
+}
+
+.area-default {
+    font-family: 'Raleway', sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: $black;
+    max-width: 445px;
+    width: 100%;
+    height: 135px;
+    resize: none;
+}
+
+.hide {
+    display: none !important;
+}
+
+@media (max-width: 890px) {
+    .page-section {
+        padding: 0 0 100px;
+    }
+    .about-wrapper {
+        .blog-title {
+            margin-bottom: 25px;
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .section-title {
+        text-align: center;
+        margin-bottom: 55px;
+    }
+}
+
+@media (max-width: 576px){
+    .heading-title__three {
+        font-size: 21px;
+    }
+    .section-title {
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 540px){
+    .input-default {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+@media (max-width: 375px) {
+    .blog-title {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 367px){
+    .section-title {
+        font-size: 28px;
+    }
+}

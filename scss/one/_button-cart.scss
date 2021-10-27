@@ -1,0 +1,22 @@
+.one-buttons__wrapper {
+    display: flex;
+    .one-quality {
+        font-size: 20px;
+        font-weight: 500;
+        display: block;
+        line-height: 64px;
+        width: 64px;
+        text-align: center;
+        border: 1px solid $colorinput;
+        &:focus {
+            border-color: $black;
+        }
+    }
+    .one-btn {
+        margin-left: 10px;
+        transition: background-color .5s ease;
+        &:hover {
+            background-color: $ctahover;
+        }
+    }
+}

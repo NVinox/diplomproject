@@ -1,0 +1,30 @@
+// Order table START
+
+.order-table {
+    border-collapse: collapse;
+    width: 285px;
+    text-align: left;
+    &__row {
+        height: 45px;
+    }
+    &__title {
+        font-weight: 500;
+        font-size: 20px;
+        padding: 0 20px;
+    }
+    &__info {
+        padding: 0 20px;
+    }
+    .order-table__row_bg {
+        background-color: $totalbg;
+    }
+}
+
+// Media
+
+@media (max-width: 540px){
+    .order-table {
+        max-width: 100%;
+        width: 100%;
+    }
+}

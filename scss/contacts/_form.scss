@@ -1,0 +1,70 @@
+// Form START
+
+.form {
+    padding: 65px 0 0;
+}
+
+.information-form {
+    max-width: 445px;
+    width: 100%;
+    input::placeholder {
+        font-family: 'Raleway', sans-serif;
+        font-size: 17px;
+        font-weight: 500;
+        letter-spacing: 0.02em;
+        color: $placeholder;
+    }
+    .form-btn {
+        font-size: 17px;
+        font-weight: 400;
+        margin-top: 35px;
+        color: $white;
+        transition: background-color .5s ease;
+        &:hover {
+            background-color: $ctahover;
+        }
+    }
+}
+
+.information-message__send {
+    display: none;
+    margin-top: 60px;
+    background-color: $messagebackground;
+    .information-message__send_text {
+        display: block;
+        text-align: center;
+        padding: 30px 10px;
+    }
+}
+
+#infoname-error,
+#infomail-error {
+    display: block;
+    margin-bottom: 12px;
+    color: red;
+}
+
+// Media
+
+@media (max-width: 960px){
+    .form {
+        padding: 40px 0 0;
+        display: block;
+    }
+}
+
+@media (max-width: 540px) {
+    .form {
+        text-align: center;
+    }
+    .information-form {
+        max-width: 100%;
+        &__input_comment {
+            max-width: 100%;
+        }
+    }
+    .form-btn {
+        max-width: 540px;
+        width: 100%;
+    }
+}

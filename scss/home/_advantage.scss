@@ -1,0 +1,68 @@
+// Advantage START
+
+.advantage {
+    padding: 65px 0;
+    &-list {
+        display: flex;
+        justify-content: space-between;
+    }
+    &-item {
+        position: relative;
+        padding-top: 100px;
+        max-width: 350px;
+        z-index: 5;
+    }
+    &-icon {
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        z-index: 10;
+    }
+    &-info {
+        max-width: 305px;
+    }
+}
+
+// Media
+
+@media (max-width: 996px){
+    .advantage-item {
+        padding: 100px 10px 0;
+    }
+}
+
+@media (max-width: 954px){
+    .advantage-item {
+        padding: 85px 10px 0;
+        margin-bottom: 40px;
+        max-width: 260px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .advantage-list{
+        display: block;
+        text-align: center;
+    }
+    .advantage-item {
+        max-width: 500px;
+        margin: 0 auto 40px;
+    }
+    .advantage-icon {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .advantage-info {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 576px){
+    .advantage {
+        padding: 40px 0;
+    }
+}

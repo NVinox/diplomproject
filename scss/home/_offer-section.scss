@@ -1,0 +1,219 @@
+// Offer-section START
+
+
+.container-pos {
+    position: relative;
+    .offer-image__first,
+    .offer-image__second {
+        position: absolute;
+        z-index: 25;
+    }
+    .offer-image__first {
+        top: 125px;
+        right: -105px;
+    }
+    .offer-image__second {
+        bottom: -50px;
+        right: 350px;
+    }
+}
+
+.offer-section {
+    position: relative;
+    padding-top: 125px;
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: -50px;
+        right: 0;
+        width: 45%;
+        height: 1900px;
+        background-color: $background;
+    }
+    .offer-swiper{
+        position: relative;
+        width: 100%;
+        height: 646px;
+        overflow: hidden;
+    }
+    .offer-wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .offer-pagination {
+        position: absolute;
+        display: inline-block;
+        max-width: 115px;
+        bottom: 0;
+        left: 290px;
+        line-height: 0;
+        .swiper-pagination-bullet {
+            width: 30px;
+            height: 4px;
+            margin: 0;
+            background-color: $bullet;
+            border-radius: 0;
+        }
+        .swiper-pagination-bullet-active {
+            background-color: $black;
+        }
+        .swiper-pagination-bullet + .swiper-pagination-bullet {
+            margin-left: 12px;
+        }
+    }
+    .offer-content {
+        max-width: 560px;
+    }
+    .offer-info {
+        font-weight: 400;
+        font-size: 20px;
+        max-width: 410px;
+        text-align: right;
+        margin-bottom: 50px;
+    }
+    .offer-btn {
+        position: relative;
+        margin-left: 165px;
+        color: $white;
+        &:hover {
+            background-color: $ctahover;
+        }
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 67px;
+            transform: translateX(-100%);
+            height: 100%;
+            background-image: url('../img/home/offer-section/arrow-down.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: rgba($black,0.1);
+            z-index: 5;
+        }
+    }
+    .offer-image {
+        position: relative;
+        width: 410px;
+        height: 646px;
+        &__major {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 25;
+        }
+    }
+}
+
+// Offer-section END
+
+
+// Media
+
+@media (max-width: 1355px) {
+    .container-pos {
+        .offer-image__first {
+            top: 420px;
+            right: 20px;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .page-title {
+        margin: 0 auto 25px;
+    }
+    .offer-section {
+        &:before {
+            bottom: 9px;
+        }
+        .offer-image__second {
+            display: none;
+        }
+    }
+    .container-pos {
+        .offer-image__first {
+            display: none;
+        }
+    }
+}
+@media (max-width: 920px){
+    .offer-section{
+        &:before {
+            bottom: 0;
+        }
+        .offer-swiper {
+            height: 997px;
+        }
+        .offer-wrapper {
+            display: block;
+        }
+        .offer-content {
+            margin: 0 auto 45px;
+            text-align: center;
+        }
+        .offer-info {
+            text-align: center;
+            margin: 0 auto 25px;
+        }
+        .offer-pagination {
+            left: 50%;
+            bottom: 50px;
+            transform: translateX(-50%);
+        }
+        .offer-btn {
+            margin-left: 67px;
+        }
+        .offer-image {
+            margin: 0 auto;
+        }
+    }
+}
+
+@media (max-width: 490px){
+    .offer-section {
+        &::before {
+            bottom: 0;
+        }
+        .offer-swiper {
+            height: 919px;
+        }
+        .offer-image {
+            height: 600px;
+            width: 100%;
+        }
+    }
+    .page-title {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 350px){
+    .page-title {
+        font-size: 30px;
+    }
+    .offer-section {
+        .offer-image {
+            height: 500px;
+        }
+        .offer-swiper {
+            height: 820px;
+        }
+    }
+    .offer-btn {
+        padding: 22px 20px;
+    }
+}
+
+@media (max-width: 320px){
+    .offer-section {
+        .offer-info {
+            font-size: 17px;
+        }
+    }  
+}

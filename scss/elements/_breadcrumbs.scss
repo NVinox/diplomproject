@@ -1,0 +1,46 @@
+// Breadcrumbs START
+
+.breadcrumbs{
+    &-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .wpcourses-breadcrumbs-sep {
+        display: block;
+    }
+    .wpcourses-breadcrumbs-last {
+        color: $breadcrumbslast;
+    }
+    .wpcourses-breadcrumbs-sep {
+        position: relative;
+        display: block;
+        margin: 0 13px;
+    }
+}
+
+.wpcourses-breadcrumbs {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+// Media
+
+@media (max-width: 479px) {
+    .breadcrumbs{
+        display: none;
+    }
+}
+
+@media (max-width: 370px){
+    .breadcrumbs-link{
+        margin-bottom: 15px;
+    }
+    .breadcrumbs-between {
+        margin: 0 13px 15px;
+    }
+    .one-buttons__wrapper .one-btn {
+        padding: 22px 35px;
+    }
+}

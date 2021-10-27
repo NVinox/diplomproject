@@ -1,0 +1,19 @@
+.thanks {
+    display: none;
+    position: relative;
+    max-width: 600px;
+    width: 100%;
+    padding: 70px;
+    background-color: $white;
+    &-btn {
+        font-size: 17px;
+        color: $cta;
+        background-color: transparent;
+        border: 1px solid $cta;
+        transition: background-color .5s ease, color .5s ease;
+        &:hover {
+            background-color: $cta;
+            color: $white;
+        }
+    }
+}

@@ -1,0 +1,54 @@
+// Order payment START
+
+.order-payment {
+    &__box {
+        margin-bottom: 45px;
+    }
+    .order-btn {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        font-size: 17px;
+        color: $white;
+    }
+}
+
+.order-payment__box {
+    position: relative;
+    padding-left: 32px;
+    input {
+        display: none;
+    }
+    &:before{
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 22px;
+        height: 22px;
+        transform: translateY(-50%);
+        border: 1px solid $black
+    }
+}
+
+.order-payment__box.active {
+    position: relative;
+    &:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 6px;
+        width: 10px;
+        height: 10px;
+        transform: translateY(-50%);
+        background-color: $black;
+    }
+}
+
+// Media
+
+@media (max-width: 540px){
+    .order-btn {
+        max-width: 100%;
+        width: 100%;
+    }
+}

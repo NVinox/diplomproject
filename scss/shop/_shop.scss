@@ -1,0 +1,29 @@
+// Shop START
+
+.shop {
+    padding: 85px 0 130px;
+    &-info {
+        color: $productinfo;
+        margin-bottom: 65px;
+    }
+}
+
+// Media
+
+@media (max-width: 769px) {
+    .shop {
+        padding: 50px 0 90px;
+        .shop-info {
+            margin-bottom: 35px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .shop {
+        padding: 40px 0 80px;
+        .shop-info {
+            margin-bottom: 30px;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+// Product connect
+
+.product-connect {
+    padding: 65px 0 130px;
+}
+
+.product-connect__wrapper {
+    
+}
+
+@media (max-width: 1080px){
+    .product-connect__wrapper {
+        margin-bottom: 10px;
+        .product-item {
+            margin: 0 0 30px;
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .product-connect {
+        padding: 40px 0 80px;
+    }
+    .product-connect__wrapper {
+        .product-item + .product-item{
+            margin-left: 0;
+        }
+    }
+}

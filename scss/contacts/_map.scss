@@ -1,0 +1,22 @@
+// Map START
+
+.map {
+    padding: 0 0 65px;
+    &-inner {
+        height: 475px;
+        background-color: #ddd;
+    }
+    &-frame {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+// Media
+
+@media (max-width: 960px) {
+    .map{
+        padding: 0 0 40px;
+    }
+}

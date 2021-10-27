@@ -1,0 +1,16 @@
+// Order form START
+
+.order-form {
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+
+// Media
+@media (max-width: 649px){
+    .order-form__wrapper {
+        display: block;
+    }
+}

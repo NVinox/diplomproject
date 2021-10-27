@@ -1,0 +1,79 @@
+// One START
+
+.one {
+    padding: 0 0 65px;
+    &-wrapper {
+        max-width: 960px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &-image {
+        position: relative;
+        width: 535px;
+        height: 730px;
+        &__icon {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &-content {
+        max-width: 350px;
+        width: 100%;
+    }
+    .one-title {
+        margin-bottom: 35px;
+    }
+    .one-title__text {
+        font-size: 20px;
+    }
+    &-size,
+    &-color {
+        margin-bottom: 60px;
+    }
+    .one-btn {
+        font-family: 'Raleway', sans-serif;
+        font-size: 17px;
+        font-weight: 500;
+        color: $white;
+    }
+}
+
+
+// Media
+@media (max-width: 940px) {
+    .one {
+        &-title {
+            margin-bottom: 25px;
+        }
+    }
+    .one-size {
+        margin-bottom: 30px;
+    }
+    .one-wrapper{
+        display: block;
+        .one-image {
+            margin: 0 auto 30px;
+        }
+    }
+    .one-information {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 768px){
+    .one {
+        padding: 0 0 40px;
+    }
+    .one-wrapper{
+        .one-image {
+            width: 100%;
+            height: 500px;
+        }
+    }
+}

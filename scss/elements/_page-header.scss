@@ -1,0 +1,25 @@
+// Page header START
+
+.page-header {
+    padding: 270px 0 85px;
+}
+
+// Media
+
+@media (max-width: 1024px) {
+    .page-header {
+        padding: 220px 0 50px;
+    }
+}
+
+@media (max-width: 769px) {
+    .page-header {
+        padding: 200px 0 50px;
+    }
+}
+
+@media (max-width: 576px) {
+    .page-header {
+        padding: 150px 0 40px;
+    }
+}

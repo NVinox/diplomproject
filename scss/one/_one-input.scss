@@ -1,0 +1,100 @@
+// One input
+
+.one-input {
+    display: flex;
+    .one-input__item {
+        position: relative;
+        line-height: 40px;
+        text-align: center;
+        width: 40px;
+        cursor: pointer;
+        & input {
+            display: none;
+        }
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 1px solid $black;
+        }
+    }
+    .one-input__item.active{
+        position: relative;
+        color: $white;
+        &:after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            transform: translate(-50%, -50%);
+            background-color: $black;
+            z-index: -1;
+        }
+    }
+    .one-input__item + .one-input__item {
+        margin-left: 15px;
+    }
+    .one-input__color {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        & input {
+            display: none;
+        }
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            z-index: 20;
+        }
+    }
+    .one-input__color.brown,
+    .one-input__color.gray,
+    .one-input__color.pink,
+    .one-input__color.yellow {
+        position: relative;
+    }
+    .one-input__color.brown.active,
+    .one-input__color.gray.active,
+    .one-input__color.pink.active,
+    .one-input__color.yellow.active {
+        border: 2px solid $black;
+        border-radius: 50%;
+    }
+    .one-input__color.brown:before,
+    .one-input__color.gray:before,
+    .one-input__color.pink:before,
+    .one-input__color.yellow:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .one-input__color.brown:before {
+        background-color: $brown;
+    }
+    .one-input__color.gray:before {
+        background-color: $gray;
+    }
+    .one-input__color.pink:before {
+        background-color: $pink;
+    }
+    .one-input__color.yellow:before {
+        background-color: $yellow;
+    }
+    .one-input__color + .one-input__color {
+        margin-left: 15px;
+    }
+}

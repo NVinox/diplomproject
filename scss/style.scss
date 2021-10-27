@@ -1,0 +1,70 @@
+@import "vars";
+@import "nullstyle";
+@import "global";
+@import "media";
+
+// Header and Footer START
+@import "header";
+@import "footer";
+// Header and Footer END
+
+//Global elements START
+@import "elements/page";
+@import "elements/_nav";
+@import "elements/_modal";
+@import "elements/_thanks";
+@import "elements/_adaptive-menu";
+@import "elements/_breadcrumbs";
+@import "elements/page-header";
+//Global elements START
+
+// Home START
+@import "home/_offer-section";
+@import "home/_collection";
+@import "home/_advantage";
+@import "home/team";
+// Home END
+
+// Shop START
+@import "shop/_shop";
+@import "shop/_shop-buttons";
+@import "shop/shop-pagination";
+// Home END
+
+// One START
+@import "one/one";
+@import "one/_one-information";
+@import "one/_one-input";
+@import "one/_product-connect";
+@import "one/button-cart";
+// One END
+
+// About START
+@import "about/_about-wrapper";
+@import "about/_about-buttons";
+// About END
+
+// Contacts START
+@import "contacts/_map";
+@import "contacts/_information";
+@import "contacts/_form";
+// Contacts END
+
+// Cart START
+@import "cart/_cart-table";
+@import "cart/_cart-product";
+@import "cart/_cart-actions";
+@import "cart/_cart-total";
+// Cart END
+
+// Order START
+@import "order/_order-form";
+@import "order/_order-fields";
+@import "order/_order-table";
+@import "order/_order-total";
+@import "order/_order-payment";
+// Order END
+
+// Success START
+@import "success/_registration";
+// Success END

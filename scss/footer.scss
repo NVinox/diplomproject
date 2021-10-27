@@ -1,0 +1,121 @@
+@import "vars";
+
+
+// Footer START
+
+.footer {
+    padding: 100px 0;
+    background-color: $background;
+    &-logo{
+        margin-bottom: 70px;
+    }
+    .custom-logo-link {
+        margin-bottom: 70px;
+    }
+    &-wrapper{
+        display: flex;
+    }
+    .footer-info__item + .footer-info__item {
+        margin-top: 6px;
+    }
+    .nav-footer {
+        margin-left: 145px;
+    }
+}
+
+.footer-description {
+    font-weight: 400;
+    font-size: 13px;
+    a{
+        display: block;
+    }
+}
+
+.nav-product{
+    display: block !important;
+    margin-top: 40px;
+    li + li {
+        margin-top: 10px;
+        margin-left: 0 !important;
+    }
+    a {
+        position: relative;
+        font-size: 13px;
+        font-weight: 400;
+        &:hover {
+            color: $cta;
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background-color: $cta;
+            transition: width .5s ease;
+        }
+        &:hover:after {
+            width: 100%;
+        }
+    }
+}
+
+.footer-contact {
+    text-align: right;
+    max-width: 180px;
+    margin-left: auto;
+    &__link{
+        display: inline-block;
+        font-weight: 400;
+        font-size: 15px;
+    }
+    &__link + &__link {
+        margin-top: 9px;
+    }
+    &__data {
+        margin-bottom: 30px;
+    }
+}
+
+.social-media__list {
+    margin-bottom: 30px;
+    .social-media__link + .social-media__link {
+        margin-left: 12px;
+    }
+}
+
+
+// Media
+
+@media (max-width: 1025px){
+    .footer-wrapper {
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 480px){
+    .footer {
+        padding: 60px 0;
+    }
+    .footer-wrapper {
+        display: block;
+    }
+    .footer-logo {
+        margin-bottom: 20px;
+    }
+    .footer-info {
+        margin-bottom: 30px;
+    }
+    .footer-contact {
+        text-align: left;
+        max-width: 180px;
+        margin-left: 0;
+    }
+    .footer-contact__data {
+        margin-bottom: 20px;
+    }
+    .social-media__list {
+        margin-bottom: 20px;
+    }
+}

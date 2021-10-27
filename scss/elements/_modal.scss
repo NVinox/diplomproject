@@ -1,0 +1,129 @@
+// Modal START
+
+.modal {
+    position: fixed;
+    display: block;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: all .5s ease-in-out;
+    z-index: 50;
+    &-box {
+        position: relative;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &-overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($cta, .95);
+    }
+    &-form {
+        position: relative;
+        display: inline-block;
+        padding: 70px;
+        background-color: $white;
+    }
+    &-title {
+        margin-bottom: 35px;
+    }
+    &-input {
+        display: block;
+        font-family: 'Raleway', sans-serif;
+        font-size: 17px;
+        max-width: 350px;
+        width: 100%;
+        padding-bottom: 16px;
+        border-bottom: 1px $black solid;
+        &::placeholder {
+            font-family: 'Raleway', sans-serif;
+            font-weight: 500;
+            font-size: 17px;
+            letter-spacing: 0.02em;
+        }
+        &:focus {
+            border-color: $cta;
+        }
+    }
+    &-input + &-input {
+        margin-top: 35px;
+    }
+    &-btn {
+        font-family: 'Raleway', sans-serif;
+        font-size: 17px;
+        display: block;
+        width: 100%;
+        letter-spacing: 0.02em;
+        padding: 22px 50px;
+        background-color: $cta;
+        color: $white;
+        margin-top: 35px;
+    }
+}
+
+.modal-btn__close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    padding: 8px 0;
+    cursor: pointer;
+    .btn-close {
+        position: relative;
+        display: block;
+        width: 20px;
+        height: 1px;
+        background-color: $black;
+        transform: rotate(45deg);
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: $black;
+            transform: rotate(90deg);
+        }
+    }
+}
+
+.modal.active {
+    top: 0;
+}
+
+.modal-input.error {
+    border-color: red;
+}
+
+#firstName-error,
+#mail-error {
+    display: block;
+    color: red;
+    margin-bottom: 12px;
+}
+
+.modal-input.valid{
+    margin-bottom: 35px;
+}
+
+// Media
+
+@media (max-width: 480px){
+    .modal-form {
+        padding: 70px 50px;
+    }
+}
+
+@media (max-width: 320px){
+    .modal-form {
+        padding: 70px 20px;
+    }
+    .modal-title {
+        font-size: 20px;
+    }
+}

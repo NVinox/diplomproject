@@ -1,0 +1,66 @@
+// Cart table START
+
+.table-box {
+    overflow-x: auto;
+    margin-bottom: 20px;
+}
+
+.cart-table {
+    border-collapse: collapse;
+    width: 100%;
+    &__tr {
+        text-align: left;
+        border-top: 1px solid $bordercart;
+    }
+    &__tr:first-child {
+        border-bottom: 1px solid $bordercart;
+        border-top: none;
+    }
+    &__td {
+        font-weight: 500;
+    }
+    &__th {
+        padding-bottom: 25px;
+    }
+    &__product {
+        width: 475px;
+    }
+    &__price {
+        width: 190px;
+    }
+    &__quality {
+        width: 285px;
+    }
+    &__total {
+        width: 155px;
+    }
+    &__td {
+        padding: 50px 0;
+    }
+    .cart-input {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 47px;
+        width: 47px;
+        border: 1px solid $colorinput;
+        text-align: center;
+    }
+}
+
+
+// Media
+
+@media (max-width: 710px) {
+    .table-box {
+        margin-bottom: 25px;
+    }
+    .cart-table {
+        width: 680px;
+    }
+}
+
+@media (max-width: 576px){
+    .cart-table {
+        width: 550px;
+    }
+}

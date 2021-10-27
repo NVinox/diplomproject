@@ -1,0 +1,74 @@
+// Shop buttons START
+
+.shop-button__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+    .shop-button__item {
+        margin-bottom: 10px;
+    }
+    .shop-button__item + .shop-button__item {
+        margin-left: 10px;
+    }
+    .shop-button__btn {
+        font-family: 'Raleway', sans-serif;
+        font-size: 17px;
+        font-weight: 500;
+        display: block;
+        padding: 20px 65px;
+        background-color: transparent;
+        border: 1px solid $black;
+    }
+    .shop-button__btn.active {
+        background-color: $black;
+        color: $white;
+    }
+}
+
+
+// Media
+
+@media (max-width: 1080px){
+    .shop-button__list {
+        justify-content: space-between;
+        .shop-button__item {
+            flex: 0 1 48%;
+        }
+        .shop-button__item + .shop-button__item {
+            margin-left: 0;
+        }
+        .shop-button__btn {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 769px){
+    .shop-button__list {
+        margin-bottom: 60px;
+    }
+}
+
+@media (max-width: 576px){
+    .shop-button__list {
+        .shop-button__item {
+            flex: 0 1 48%;
+        }
+    }
+}
+
+@media (max-width: 500px){
+    .shop-button__list {
+        display: block;
+        margin-bottom: 45px;
+        .shop-button__item {
+            margin: 0;
+        }
+        .shop-button__item + .shop-button__item {
+            margin-top: 15px;
+        }
+        .shop-button__btn {
+            padding: 15px 65px;
+        }
+    }
+}

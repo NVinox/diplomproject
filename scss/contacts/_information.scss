@@ -1,0 +1,39 @@
+// Information
+
+.information {
+    padding: 65px 0;
+    &-list {
+        display: flex;
+        justify-content: space-between;
+        max-width: 945px;
+    }
+    &-title {
+        display: block;
+        margin-bottom: 20px;
+    }
+    &-link {
+        font-size: 20px;
+    }
+}
+
+// Media
+
+@media (max-width: 960px){
+    .information {
+        padding: 40px 0;
+    }
+}
+
+@media (max-width: 800px){
+    .information {
+        &-list {
+            display: block;
+        }
+        &-item + &-item{
+            margin-top: 20px;
+        }
+        &-title {
+            margin-bottom: 5px;
+        }
+    }
+}

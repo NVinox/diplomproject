@@ -1,0 +1,55 @@
+.nav{
+    ul {
+        display: flex;
+        li + li {
+            margin-left: 45px;
+        }
+        li.current_page_item{
+            color: $cta;
+        }
+        li.current_page_item > a{
+            font-weight: 700;
+        }
+        li.current-menu-item{
+            color: $cta;
+        }
+        li.current-menu-item > a{
+            font-weight: 700;
+        }
+        li.current-post-parent{
+            color: $cta;
+        }
+        li.current-post-parent > a{
+            font-weight: 700;
+        }
+    }
+    .sub-menu {
+        display: block !important;
+        margin-top: 40px;
+        color: $black;
+        li + li {
+            margin-left: 0;
+            margin-top: 10px;
+        }
+    }
+    a {
+        position: relative;
+        font-weight: 400;
+        font-size: 15px;
+        &:before {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background-color: $cta;
+        }
+    }
+    a:hover:before {
+        width: 100%;
+    }
+    a:hover {
+        color: $cta;
+    }
+}

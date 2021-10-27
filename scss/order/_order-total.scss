@@ -1,0 +1,25 @@
+// Order total
+
+.order-total {
+    &__description + &__description{
+        margin-top: 160px;
+    }
+}
+
+// Media
+
+@media (max-width: 649px){
+    .order-total {
+        &__description + &__description{
+            margin-top: 80px;
+        }
+    }
+}
+
+@media (max-width: 540px){
+    .order-total {
+        &__description{
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,12 @@
+// About buttons START
+
+.about-buttons {
+    text-align: center;
+    .about-btn {
+        display: inline-block;
+        color: $white;
+        &:hover {
+            background-color: $ctahover;
+        }
+    }
+}
